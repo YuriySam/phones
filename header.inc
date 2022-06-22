@@ -47,7 +47,7 @@ function Bookmark() {window.external.AddFavorite(location.href, 'phones = <?php 
 </TD>
 <TD WIDTH="30%" ALIGN="right" VALIGN="top">
 <P CLASS="nav"><?php echo $la_1 ?>
-	<!--КНП "Центр екстреної медичної допомоги та медицини катастроф міста Києва" -->
+	<!--Організація -->
 </P>
 <P CLASS="big"><?php echo $la_10 ?><!--"Телефоний довідник:"-->
 	<BR><?php echo $la_11 ?> <!--"Результати пошуку"-->

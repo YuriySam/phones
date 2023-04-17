@@ -45,7 +45,6 @@ $sql_birthday = "SELECT *, CURDATE() as today, WEEKDAY(`birthday`) as day, DAYNA
 $res_birthday = mysqli_query($link, $sql_birthday) or exit('Похибка виконання запиту до БД..'.$filename);
 
 
-
 //дни рождения сотрудников сегодня и +7 дней от сегодня
 $sql_birthday7 = "SELECT *, CURDATE() as today, WEEKDAY(`birthday`) as day, DAYNAME(`birthday`) as dayname   
 	FROM ophone, func, office, street, branch
@@ -83,11 +82,11 @@ ORDER BY branindex, sortindex ";
 
 ?>
 <P>
-	<?php echo "Сьогодні, ".date('d/m/Y ')." Вітаємо з " ?>
+	<?php echo "Сьогодні, ".date('d/m/Y ')." Вітаємо(або готуємось вітати) з " ?>
 	<STRONG>
 		<?php echo "Днем народження" ?> 
 	</STRONG>
-	<?php echo "(".count($res_birthday).")(з $b_today), та готуємось вітати (".count($res_birthday7).")" ?>
+	
 	: 
 </P>
 <TABLE WIDTH="100%" CELLPADDING="2" CELLSPACING="1" BORDER="0">

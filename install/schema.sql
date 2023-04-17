@@ -76,5 +76,10 @@ CREATE TABLE quote (
   quote varchar(255),
   PRIMARY KEY (id)
 );
+INSERT INTO `office` (`offid`, `office`) VALUES (NULL, 'MyOffice');
+INSERT INTO `street` (`strid`, `town_pre`, `town`, `street_pre`, `street`) VALUES (NULL, 'town-pre', 'Town', 'street-pre', 'Street');
+INSERT INTO `func` (`funid`, `func`, `funindex`) VALUES (NULL, 'Func', NULL);
+INSERT INTO `branch` (`branid`, `branch`, `branindex`) VALUES (NULL, 'Branch', NULL);
+INSERT INTO `ophone` (`id`, `number`, `number1`, `offid`, `strid`, `funid`, `branid`, `surname`, `name`, `patronymic`, `birthday`, `house`, `flat`, `note`, `sortindex`, `userMail`) VALUES (NULL, '000', '000-00-00', '1', '1', '1', '1', 'surname', 'name', 'patronymic', '1970-01-01', '1', '1', NULL, NULL, 'info@google.com');
 
 INSERT INTO auth VALUES('1','admin',MD5('admin'),'2004-10-19 00:05:01','127.0.0.1');

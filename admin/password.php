@@ -14,16 +14,17 @@ if (! isset($_SESSION['logdate'])) {
 
 include_once('../lang_ua.php');
 include_once('../base.inc');
+include('../lang_ua.php');
 
 if (isset($_POST['pswd']) and isset($_POST['pswd2'])) { 
   if (! strlen($_POST['pswd']))
-    $err =  echo $la_143 ; // Необхідно ввести новий пароль
+    $err =   $la_143  ; // Необхідно ввести новий пароль
   elseif (strlen($_POST['pswd']) < 6)
-    $err = <?php echo $la_144 ?>;// Пароль не повинен бути коротше 6 символів.
+    $err =  $la_144 ;// Пароль не повинен бути коротше 6 символів.
   elseif (strlen($_POST['pswd']) > 16)
-    $err = <?php echo $la_145 ?>;//Пароль не повинен бути довшим за 16 символів.
+    $err =  $la_145 ;//Пароль не повинен бути довшим за 16 символів.
   elseif (preg_match("/\W+/", $_POST['pswd']))
-    $err = <?php echo $la_146 ?>;//Пароль не має містити інших знаків, крім букв, цифр та символів підкреслення.
+    $err =  $la_146 ;//Пароль не має містити інших знаків, крім букв, цифр та символів підкреслення.
   elseif (! strlen($_POST['pswd2']))
     $err = ' $la_147' ; // Необхідно двічі ввести новий пароль
   elseif ($_POST['pswd'] !== $_POST['pswd2'])

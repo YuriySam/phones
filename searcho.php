@@ -15,6 +15,7 @@ if (isset($_GET['o'])) {
   }
 }
 include('base.inc');
+include('lang_ua.php');
 $sql = "SELECT offid, office FROM office ORDER BY office";
 $res = mysqli_query($link, $sql) or exit($la_151_2); //"Похибка при виконанні запиту до БД. "
 $title = $la_6; //<!-- Пошук за підприємством -->

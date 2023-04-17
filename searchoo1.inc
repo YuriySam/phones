@@ -5,6 +5,7 @@ searchoo1.inc
 */
 
 include('base.inc');
+include('lang_ua.php');
 
 $sql = "SELECT query.branch FROM (SELECT DISTINCT branindex,branch
 FROM branch, ophone

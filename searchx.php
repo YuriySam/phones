@@ -20,8 +20,10 @@ if (isset($_GET['x'])) {
     exit;
   }
 }
+include('lang_ua.php');
 $title = $la_3;//"Пошук за номером"
 include('header.inc');
+
 ?>
 <P>
 	<?php echo $la_25 ?> 

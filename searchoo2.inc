@@ -3,7 +3,7 @@
 searchoo2.inc
  */
 include('base.inc');
-
+include('lang_ua.php');
 
 $input_note_branch = addslashes($note_branch);//Екрануємо спецсимволи (\)
 

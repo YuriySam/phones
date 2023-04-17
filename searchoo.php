@@ -33,6 +33,7 @@ if (isset($_GET['o']) and isset($_GET['oo'])) {
 }
 
 include('base.inc');
+include('lang_ua.php');
 $sql = "SELECT offid, office FROM office ORDER BY (office+0)";
 $res = mysqli_query($link, $sql) or exit($la_151_2.'  searchoo.php стр47'.$sql);//"Похибка при виконанні запиту до БД. "
 $title = $la_150_28;//"Пошук по організації "
